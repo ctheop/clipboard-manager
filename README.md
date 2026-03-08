@@ -156,6 +156,17 @@ The app follows a lightweight **MVVM** pattern:
 - **Service layer** – `ClipboardService` is the single source of truth (Combine `@Published`)
 - **Data model** – `ClipboardItem` struct with four content types: `text`, `image`, `fileURL`, `unknown`
 
+## Running on macOS
+
+macOS may prevent the app from running due to security settings. 
+To allow it:
+1. Right-click the app and select "Open"
+2. Click "Open" in the dialog that appears
+
+Or in Terminal:
+```bash
+sudo xattr -rd com.apple.quarantine ~/Downloads/clipboard-manager.app
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
