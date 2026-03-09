@@ -3,7 +3,7 @@
 //  ClipboardManager
 //
 //  Created by Theodor Plümpe on 24.02.26.
-//
+// Datei enthält die Einstellungen der App, wie z.B. die Anzahl der gespeicherten Einträge, das Ignorieren von Duplikaten und das Ausschließen von Passwörtern.
 
 import Foundation
 import KeyboardShortcuts
