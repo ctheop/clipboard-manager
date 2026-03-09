@@ -19,10 +19,10 @@ A lightweight, native macOS clipboard manager that lives in your menu bar. It au
 ## Requirements
 
 | Requirement | Minimum version |
-|---|---|
-| macOS | 13.0 Ventura |
-| Xcode | 15.0 |
-| Swift | 5.9 |
+| ----------- | --------------- |
+| macOS       | 13.0 Ventura    |
+| Xcode       | 15.0            |
+| Swift       | 5.9             |
 
 ## Installation
 
@@ -43,28 +43,29 @@ See the [Building from source](#building-from-source) section below.
 
 ### Opening clipboard history
 
-| Method | Action |
-|---|---|
-| Click the **clipboard icon** in the menu bar | Opens the history popover |
-| Press the configured **global hotkey** | Toggles the history popover from anywhere |
+| Method                                       | Action                                    |
+| -------------------------------------------- | ----------------------------------------- |
+| Click the **clipboard icon** in the menu bar | Opens the history popover                 |
+| Press the configured **global hotkey**       | Toggles the history popover from anywhere |
 
 The default hotkey is not set on first launch; you can assign one in **Settings → General → Hotkey**.
 
 ### Working with history items
 
-| Action | How |
-|---|---|
-| **Re-copy an item** | Click it in the list |
-| **Open a URL** | Click the blue link text |
-| **Star / unstar a favourite** | Click the ★ button on the right of any row |
-| **Delete a single item** | Right-click → **Delete** |
-| **Toggle favourites filter** | Click the ★ icon in the header toolbar |
-| **Search** | Type in the search bar at the top of the popover |
-| **Clear history** | Click the 🗑 icon in the header (favourites are preserved) |
+| Action                        | How                                                        |
+| ----------------------------- | ---------------------------------------------------------- |
+| **Re-copy an item**           | Click it in the list                                       |
+| **Open a URL**                | Click the blue link text                                   |
+| **Star / unstar a favourite** | Click the ★ button on the right of any row                 |
+| **Delete a single item**      | Right-click → **Delete**                                   |
+| **Toggle favourites filter**  | Click the ★ icon in the header toolbar                     |
+| **Search**                    | Type in the search bar at the top of the popover           |
+| **Clear history**             | Click the 🗑 icon in the header (favourites are preserved) |
 
 ### Context menu
 
 Right-click any item to access:
+
 - **Add to Favourites** / **Remove from Favourites**
 - **Delete**
 
@@ -74,25 +75,25 @@ Open **Settings** by clicking the ⚙ icon in the popover header, or via the sta
 
 ### General
 
-| Setting | Description |
-|---|---|
-| **Launch at Login** | Automatically start ClipboardManager when you log in |
-| **Hotkey** | The global keyboard shortcut that opens the clipboard history popover |
+| Setting             | Description                                                           |
+| ------------------- | --------------------------------------------------------------------- |
+| **Launch at Login** | Automatically start ClipboardManager when you log in                  |
+| **Hotkey**          | The global keyboard shortcut that opens the clipboard history popover |
 
 ### History
 
-| Setting | Default | Description |
-|---|---|---|
-| **Max entries** | 50 | Maximum number of non-favourite items kept in history (10 – 200) |
-| **Ignore duplicates** | On | Skip adding an item if it already exists in the history |
-| **Exclude passwords** | On | Ignore clipboard changes flagged as `ConcealedType` (used by most password managers) |
+| Setting               | Default | Description                                                                          |
+| --------------------- | ------- | ------------------------------------------------------------------------------------ |
+| **Max entries**       | 50      | Maximum number of non-favourite items kept in history (10 – 200)                     |
+| **Ignore duplicates** | On      | Skip adding an item if it already exists in the history                              |
+| **Exclude passwords** | On      | Ignore clipboard changes flagged as `ConcealedType` (used by most password managers) |
 
 ### Data
 
-| Action | Description |
-|---|---|
+| Action                     | Description                                                |
+| -------------------------- | ---------------------------------------------------------- |
 | **Clear complete history** | Permanently deletes all stored history from `UserDefaults` |
-| **Quit app** | Terminates the application |
+| **Quit app**               | Terminates the application                                 |
 
 ## Building from source
 
@@ -158,12 +159,14 @@ The app follows a lightweight **MVVM** pattern:
 
 ## Running on macOS
 
-macOS may prevent the app from running due to security settings. 
+macOS may prevent the app from running due to security settings.
 To allow it:
+
 1. Right-click the app and select "Open"
 2. Click "Open" in the dialog that appears
 
 Or in Terminal:
+
 ```bash
 sudo xattr -rd com.apple.quarantine ~/Downloads/clipboard-manager.app
 
@@ -181,3 +184,4 @@ Please keep pull requests focused — one feature or fix per PR makes review muc
 ## License
 
 This project is currently unlicensed. See the repository owner for usage terms.
+```
